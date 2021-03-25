@@ -13,7 +13,15 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/angular.min.js"></script>
   </head>
+  <header>
+    <nav class="navbar navbar-expand-xxl navbar-light bg-light">
+      <a class="navbar-brand" href="#">Family Relationships</a>
+    </nav>
+  </header>
   <body>
   <h1>Yooo It's working!</h1>
   </body>
+  <footer>
+    <p style="text-align: center">©2021 - Universidad El Bosque - Gabriel Blanco & Juan Pablo Araque</p>
+  </footer>
 </html>
