@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="JAX-WS" type="JAX-WS">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../tomcat/apache-tomcat-10.0.4/bin/tomcat-juli.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../tomcat/apache-tomcat-10.0.4/bin/commons-daemon.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../tomcat/apache-tomcat-10.0.4/bin/bootstrap.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

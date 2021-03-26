@@ -9,18 +9,20 @@
 <html>
   <head>
     <title>Family Relationships</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/bootstrap.js"></script>
-    <script src="js/angular.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="https://kit.fontawesome.com/302a1eb3e6.js"></script>
   </head>
   <header>
     <nav class="navbar navbar-expand-xxl navbar-light" style="background-color: #a7c6da">
       <a class="navbar-brand" href="#">Family Relationships</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-toggle="expand" data-target="#navbarNavDropDown"
+              aria-controls="navbarNavDropDown" aria-expanded="true" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse" id="navbarNavDropDown">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="./DownloadTable">Ver Registros</a>
@@ -50,7 +52,6 @@
           <label for="SecondLastName">Segundo Apellido</label> <br>
           <input type="text" id="SecondLastName" placeholder="Ej. Smith">
         </div>
-        <div class="form-"
       </form>
     </div>
   </div>
