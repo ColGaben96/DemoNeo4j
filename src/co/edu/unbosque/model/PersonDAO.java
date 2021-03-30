@@ -23,4 +23,8 @@ public class PersonDAO {
     public void delete(int id) {
         persons.remove(id);
     }
+
+    public ArrayList<PersonDTO> getAllArray() {
+        return persons;
+    }
 }

@@ -18,11 +18,11 @@
   <header>
     <nav class="navbar navbar-expand-xxl navbar-light" style="background-color: #a7c6da">
       <a class="navbar-brand" href="#">Family Relationships</a>
-      <button class="navbar-toggler" type="button" data-toggle="expand" data-target="#navbarNavDropDown"
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropDown"
               aria-controls="navbarNavDropDown" aria-expanded="true" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse" id="navbarNavDropDown">
+      <div class="collapse navbar-collapse" id="navbarNavDropDown">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="./DownloadTable">Ver Registros</a>
@@ -32,31 +32,41 @@
     </nav>
   </header>
   <body style="background-color: #0d3b66; color: #ffffff">
-  <h1 style="text-align: center">Ingresa aquí los datos</h1>
   <div class="container">
-    <div class="container" style="background-color: #a7c6da; color: #000000">
-      <form>
+    <br>
+    <div class="alert alert-success" role="alertdialog" hidden="true">
+      <h4 class="alert-heading">Operación Finalizada</h4>
+      <p>Se ha añadido correctamente el registro.</p>
+    </div>
+    <div class="alert alert-danger" role="alertdialog" hidden="true">
+      <h4 class="alert-heading">Error</h4>
+      <p>Ha ocurrido un error inesperado con la aplicación.</p>
+    </div>
+    <h1 style="text-align: center">Ingresa aquí los datos</h1>
+    <div class="container" style="background-color: #a7c6da;
+    color: #000000;
+    border-radius: 15px;" >
+      <form action="SendData" method="post">
         <div class="form-group">
-          <label for="FirstName">Primer Nombre</label> <br>
-          <input type="text" id="FirstName" placeholder="Ej. Joe">
+          <div class="form-group">
+            <label for="FirstName">Primer Nombre</label>
+            <input type="text" class="form-control" id="FirstName" placeholder="Ej. Nicolas">
+            <label for="MiddleName">Segundo Nombre</label>
+            <input type="text"  class="form-control" id="MiddleName" placeholder="Ej. Antonio">
+            <label for="LastName">Primer Apellido</label>
+            <input type="text" class="form-control" id="LastName" placeholder="Ej. Ferreira">
+            <label for="SecondLastName">Segundo Apellido</label>
+            <input type="text"  class="form-control " id="SecondLastName" placeholder="Ej. Char">
+          </div>
         </div>
         <div class="form-group">
-          <label for="MiddleName">Segundo Nombre</label> <br>
-          <input type="text" id="MiddleName" placeholder="Ej. Michael">
-        </div>
-        <div class="form-group">
-          <label for="LastName">Primer Apellido</label> <br>
-          <input type="text" id="LastName" placeholder="Ej. Doe">
-        </div>
-        <div class="form-group">
-          <label for="SecondLastName">Segundo Apellido</label> <br>
-          <input type="text" id="SecondLastName" placeholder="Ej. Smith">
+          <input class="btn btn-primary form-control" type="submit" value="Registrar">
         </div>
       </form>
     </div>
   </div>
   </body>
   <footer>
-    <p style="text-align: center">©2021 - Universidad El Bosque - Gabriel Blanco & Juan Pablo Araque</p>
+    <p style="text-align: center">©2021 - Universidad El Bosque - Gabriel Blanco; Juan Pablo Araque; Juan Barrera; Juan Camacho</p>
   </footer>
 </html>
