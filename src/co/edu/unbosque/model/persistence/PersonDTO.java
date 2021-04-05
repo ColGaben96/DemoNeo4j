@@ -1,16 +1,17 @@
 package co.edu.unbosque.model.persistence;
 
-import javax.persistence.Column;
-import javax.persistence.Table;
 import java.util.Date;
 
-@Table(name = "Person")
+
 public class PersonDTO {
-    @Column
-    private String fname, mname, lfname, lmname, hometown, living;
-    @Column
+
     private int id;
-    @Column
+    private String fname;
+    private String mname;
+    private String lfname;
+    private String lmname;
+    private String hometown;
+    private String living;
     private Date birthday;
 
     public PersonDTO(String fname, String mname, String lfname, String lmname, String hometown, String living, int id, Date birthday) {
