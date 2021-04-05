@@ -14,7 +14,7 @@ public class Database {
         Session session = driver.session(SessionConfig.forDatabase("Family"));
         var result = session.readTransaction(
                 tx -> tx.run(query,
-                        parameters("name","lastname", "hometown"))
+                        parameters("fname", "mname", "lname", "slname", "country", "state", "city"))
                         .list());
 
     }

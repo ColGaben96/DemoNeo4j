@@ -20,5 +20,6 @@ public class SendData extends HttpServlet {
         String state = req.getParameter("State");
         String city = req.getParameter("City");
         c.addPerson(fname, mname, lname, slname, country, state, city);
+        req.setAttribute("successful", "hidden: false");
     }
 }

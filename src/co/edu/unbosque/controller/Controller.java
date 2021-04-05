@@ -11,6 +11,6 @@ public class Controller {
     }
 
     public void addPerson(String fname, String mname, String lname, String slname, String country, String state, String city) {
-
+        model.newPerson(fname, mname, lname, slname, country, state, city);
     }
 }

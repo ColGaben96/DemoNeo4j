@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropDown">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="./DownloadTable">Ver Registros</a>
+            <a class="nav-link" href="./DownloadTable.jsp">Ver Registros</a>
           </li>
         </ul>
       </div>
@@ -34,11 +34,11 @@
   <body style="background-color: #0d3b66; color: #ffffff">
   <div class="container">
     <br>
-    <div class="alert alert-success" role="alertdialog" hidden="true">
+    <div class="alert alert-success" role="alertdialog" hidden="true" id="successful">
       <h4 class="alert-heading">Operación Finalizada</h4>
       <p>Se ha añadido correctamente el registro.</p>
     </div>
-    <div class="alert alert-danger" role="alertdialog" hidden="true">
+    <div class="alert alert-danger" role="alertdialog" hidden="true" id="error">
       <h4 class="alert-heading">Error</h4>
       <p>Ha ocurrido un error inesperado con la aplicación.</p>
     </div>
@@ -70,8 +70,8 @@
             <input type="text" class="form-control" id="City" placeholder="Ej. Bogotá">
           </div>
         </div>
+        <input class="btn btn-primary form-control" type="submit" value="Registrar">
       </form>
-      <input class="btn btn-primary form-control" type="submit" value="Registrar">
     </div>
   </div>
   </body>
