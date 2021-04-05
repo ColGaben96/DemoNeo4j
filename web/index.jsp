@@ -45,24 +45,33 @@
     <h1 style="text-align: center">Ingresa aquí los datos</h1>
     <div class="container" style="background-color: #a7c6da;
     color: #000000;
-    border-radius: 15px;" >
+    border-radius: 15px;
+    columns: 2">
       <form action="SendData" method="post">
         <div class="form-group">
           <div class="form-group">
             <label for="FirstName">Primer Nombre</label>
-            <input type="text" class="form-control" id="FirstName" placeholder="Ej. Nicolas">
+            <input type="text" class="form-control" id="FirstName" placeholder="Ej. John">
             <label for="MiddleName">Segundo Nombre</label>
             <input type="text"  class="form-control" id="MiddleName" placeholder="Ej. Antonio">
             <label for="LastName">Primer Apellido</label>
-            <input type="text" class="form-control" id="LastName" placeholder="Ej. Ferreira">
+            <input type="text" class="form-control" id="LastName" placeholder="Ej. Bonilla">
             <label for="SecondLastName">Segundo Apellido</label>
             <input type="text"  class="form-control " id="SecondLastName" placeholder="Ej. Char">
           </div>
         </div>
         <div class="form-group">
-          <input class="btn btn-primary form-control" type="submit" value="Registrar">
+          <div class="form-group">
+            <label for="Country">Pais de proveniencia</label>
+            <input type="text" class="form-control" id="Country" placeholder="Ej. Colombia">
+            <label for="State">Estado</label>
+            <input type="text" class="form-control" id="State" placeholder="Ej. Distrito Capital">
+            <label for="City">Ciudad</label>
+            <input type="text" class="form-control" id="City" placeholder="Ej. Bogotá">
+          </div>
         </div>
       </form>
+      <input class="btn btn-primary form-control" type="submit" value="Registrar">
     </div>
   </div>
   </body>
