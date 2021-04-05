@@ -47,7 +47,7 @@
     color: #000000;
     border-radius: 15px;
     columns: 2">
-      <form action="SendData" method="post">
+      <form name="RegistrationForm" action="SendData" method="post">
         <div class="form-group">
           <div class="form-group">
             <label for="FirstName">Primer Nombre</label>
